@@ -29,9 +29,7 @@ String stringFromInput(String prompt, List<String> validOptions) {
   String? operation = stdin.readLineSync();
 
   while (operation == null || !validOptions.contains(operation)) {
-    print(
-      "Invalid operation! Please enter one of ${validOptions.join(', ')}: ",
-    );
+    print("Invalid option! Please enter one of ${validOptions.join(', ')}: ");
     operation = stdin.readLineSync();
   }
 
