@@ -13,9 +13,11 @@ Atualmente, o menu principal oferece os seguintes programas:
 * **3. Average Age:** Calcula a média de idade.
 * **4. Participant Registration:** Um formulário de registro de participante.
 * **5. Freelancer Salary:** Calcula o salário de um freelancer.
-* **6. Error Fixing:** Um módulo de desafio para consertar erros.
+* **6. Pix Transaction:** Faz transações PIX.
 * **7. Benefits Club:** Lógica para um clube de benefícios.
 * **8. Coupon Program:** Lógica para validar cupons de desconto.
+* **9. Driving License:** Lógica paa cálculo de licença de condução.
+* **10. Months of the Year:** Apresenta os meses do ano.
 * **9. Exit:** Encerra a aplicação.
 
 ## 🚀 Como Executar o Projeto
@@ -33,23 +35,25 @@ dart run bin/my_app.dart
 
 ```bash
 ###############################
-#          Dart Menu          #
+#          Dart Menu          #
 ###############################
-# 1. Calculator               #
-# 2. Double a number          #
-# 3. Average Age              #
+# 1. Calculator               #
+# 2. Double a number          #
+# 3. Average Age              #
 # 4. Participant Registration #
-# 5. Freelancer Salary        #
-# 6. Error Fixing             #
-# 7. Benefits Club            #
-# 8. Coupon Program           #
-# 9. Exit                     #
+# 5. Freelancer Salary        #
+# 6. Pix Transaction          #
+# 7. Benefits Club            #
+# 8. Coupon Program           #
+# 9. Driving License          #
+# 10. Months of the Year      #
+# 11. Exit                    #
 ###############################
 
-Enter your choice (1-9):
+Enter your choice (1-11):
 ```
 
-4. Digite o número da sua escolha (1-9) e pressione Enter para executar o módulo desejado.
+4. Digite o número da sua escolha (1-11) e pressione Enter para executar o módulo desejado.
 
 ## 🧪 Como Executar os Testes
 

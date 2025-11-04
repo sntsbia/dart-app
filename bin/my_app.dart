@@ -3,8 +3,10 @@ import 'package:my_app/benefits_club.dart' as benefits_club;
 import 'package:my_app/calculator.dart' as calculator;
 import 'package:my_app/coupon_program.dart' as coupon_program;
 import 'package:my_app/double_number.dart' as double_number;
+import 'package:my_app/driving_license.dart' as driving_license;
 import 'package:my_app/error_fixing.dart' as error_fixing;
 import 'package:my_app/freelancer_salary.dart' as freelancer_salary;
+import 'package:my_app/months_year.dart' as months_year;
 import 'package:my_app/participant_registration.dart'
     as participant_registration;
 import 'package:my_app/utils/io_util.dart' show integerFromInput;
@@ -20,14 +22,16 @@ void main() {
     print("# 3. Average Age              #");
     print("# 4. Participant Registration #");
     print("# 5. Freelancer Salary        #");
-    print("# 6. Error Fixing             #");
+    print("# 6. Pix Transaction          #");
     print("# 7. Benefits Club            #");
     print("# 8. Coupon Program           #");
-    print("# 9. Exit                     #");
+    print("# 9. Driving License          #");
+    print("# 10. Months of the Year      #");
+    print("# 11. Exit                    #");
     print("###############################");
 
     print("");
-    int choice = integerFromInput("Enter your choice (1-9): ");
+    int choice = integerFromInput("Enter your choice (1-10): ");
 
     print("-------------------------------");
 
@@ -57,6 +61,12 @@ void main() {
         coupon_program.runCouponProgramApp();
         break;
       case 9:
+        driving_license.runDrivingLicenseApp();
+        break;
+      case 10:
+        months_year.runMonthsYearApp();
+        break;
+      case 11:
         print("Exiting the application. Goodbye!");
         return;
       default:

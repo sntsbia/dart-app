@@ -23,3 +23,17 @@ int integerFromInput(String prompt) {
 
   return int.parse(entry);
 }
+
+String stringFromInput(String prompt, List<String> validOptions) {
+  print(prompt);
+  String? operation = stdin.readLineSync();
+
+  while (operation == null || !validOptions.contains(operation)) {
+    print(
+      "Invalid operation! Please enter one of ${validOptions.join(', ')}: ",
+    );
+    operation = stdin.readLineSync();
+  }
+
+  return operation;
+}

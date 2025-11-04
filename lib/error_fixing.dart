@@ -15,6 +15,13 @@ void runErrorFixingApp() {
     'Enter the amount you want to transfer via Pix: ',
   );
 
+  while (valorPix > saldo) {
+    print('Insufficient balance for this Pix transfer.');
+    valorPix = doubleFromInput(
+      'Please enter a valid amount to transfer via Pix: ',
+    );
+  }
+
   double novoSaldo = saldo.pix(valorPix);
 
   print(
